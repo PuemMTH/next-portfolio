@@ -8,7 +8,6 @@ const nextConfig = {
   exportPathMap: function () {
     return {
       "/": { page: "/" },
-      // Add more routes here if you have them
     };
   },
 
