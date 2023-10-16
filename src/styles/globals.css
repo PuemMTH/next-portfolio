@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Gobel font fira_code.css in folder public/font/ttf/ */
+@font-face {
+  font-family: 'Gobel';
+  /* src: url('/path_to_your_font/Gobel.woff2') format('woff2'), */
+  /* url('/path_to_your_font/Gobel.woff') format('woff'); */
+  src: url('/font/woff2/FiraCode-Light.woff2') format('woff2'),
+  url('/font/woff/FiraCode-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: 'Gobel', sans-serif;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
