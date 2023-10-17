@@ -16,7 +16,7 @@ type enducationData = {
     date: string,
 }
 
-type certificate = {
+export type certificate = {
     name: string,
     date: string,
     description: string,

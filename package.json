@@ -10,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@react-three/fiber": "^8.14.5",
     "@types/three": "^0.157.0",
     "axios": "^1.5.1",
@@ -20,6 +21,7 @@
     "react": "^18",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
+    "react-icons": "^4.11.0",
     "three": "^0.157.0",
     "usehooks-ts": "^2.9.1"
   },

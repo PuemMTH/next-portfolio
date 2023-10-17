@@ -1,19 +1,19 @@
 import React from "react";
-import type { projects } from "@/types/index";
+import type { projects, certificate } from "@/types/index";
 
 function TimelineComponent({
 	title,
 	data,
 }: {
 	title: string;
-	data: projects[];
+	data: projects[] | certificate[]
 }) {
 	const year = new Set(data.map((item) => item.date));
 
 	return (
 		<div className="p-8">
 			<h2 className="text-2xl text-gray-800 font-bold mb-6">
-				Timeline Project
+				{title}
 			</h2>
 			<div className="relative border-l-2 border-purple-600 ml-4 text-gray-600">
 				{Array.from(year).map((item) => (
